@@ -57,7 +57,21 @@ console.log(a);  //over ride: print 3*/
 // console.log(age);
 
 // x = null;
-// console.log(x);    
+// console.log(x);  
+
+// const a = [4];
+// const b = [4];
+// if(a===b){      // here it compare strictly refernces of both a and b i.e. different
+//   console.log("both are same");
+// }else
+// console.log("both are not same");
+
+// const c = [4];
+// const d = [4];
+// if(JSON.stringify(a)===JSON.stringify(b)){      // here it compare strictly contents  of both a and b i.e. same : 4
+//   console.log("both are same");
+// }else
+// console.log("both are not same");
 
 
 // OBJECTS IN JS
@@ -246,6 +260,84 @@ for (i = 0; i <= word.length - 1; i++) {
 
 }
 console.log(new_word);*/
+
+
+// to print solid cone----
+// function solidConeStarPattern(height) {
+//     let pattern = '';
+//     for (let i = 1; i <= height; i++) {
+//         // Adding leading spaces
+//         for (let j = height - i; j > 0; j--) {
+//             pattern += ' ';
+//         }
+//         // Adding stars
+//         for (let k = 1; k <= i * 2 - 1; k++) {
+//             pattern += '*';
+//         }
+//         pattern += '\n';
+//     }
+//     return pattern;
+// }
+
+// // Example usage:
+// const height = 5;
+// console.log(solidConeStarPattern(height));
+
+// method two----
+// function solidConeStarPattern(height, printFunction) {
+//     let pattern = '';
+
+//     for (let i = 1; i <= height; i++) {
+//         // Adding leading spaces
+//         for (let j = height - i; j > 0; j--) {
+//             pattern += ' ';
+//         }
+//         // Adding stars
+//         for (let k = 1; k <= i * 2 - 1; k++) {
+//             pattern += '*';
+//         }
+//         pattern += '\n';
+//     }
+
+//     printFunction(pattern);
+// }
+
+// // Function to print the pattern
+// function printPattern(pattern) {
+//     console.log(pattern);
+//     //document.write(pattern);
+// }
+
+// // Example usage:
+// const height = 10;
+// solidConeStarPattern(height, printPattern);
+
+// to print hollow ractangle
+// let height = 9;
+// for(i=1; i<=height; i++){
+//     for(j=1; j<=((2*height)-1); j++){
+//        if(i==1 || i==9 || j==1 || j==((2*height)-1)){
+//         document.write(" *&nbsp;&nbsp;");
+//        }else {
+//         document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+//     }
+//     }
+//     document.write("<br>");
+// }
+
+// right angle triangle
+// let height = 9;
+// for(i=1; i<=height; i++){
+//     for(j=1; j<=i; j++){
+//        if(i==1 || i==9 || j==1 || j==i){
+//         document.write(" *&nbsp;&nbsp;");
+//        }else {
+//         document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+//     }
+//     }
+//     document.write("<br>");
+//}
+
 
 
 //pattern 1
@@ -631,7 +723,7 @@ console.log(new_word);*/
 // console.log(str4);
 
 
- // string length
+// string length
 //  let str = "AmanKumar";
 //  console.log("str",str);
 //  console.log(str.length);
@@ -703,7 +795,7 @@ console.log(new_word);*/
 //     return str.charAt(0).toUpperCase() + str.slice(1);
 //   }
 //   console.log("Capitalized: " + capitalize("harshit"));
-  
+
 // 2nd method
 //   let str="aman sharma";
 //   let new_str= "";
@@ -763,7 +855,7 @@ console.log(new_word);*/
 //                 indexvalu = -1;
 //             }
 //         }
-    
+
 // }
 // console.log(indexvalu);
 
@@ -772,7 +864,7 @@ console.log(new_word);*/
 //     console.log(number);
 //     number++;
 // }
-    
+
 
 // task - 2 write a custom indexOf function
 // let str = "harshit tiwari";
@@ -906,22 +998,22 @@ console.log(new_word);*/
 //     if (start < 0) {
 //       start = Math.max(arr.length + start, 0);
 //     }
-  
+
 //     // Step 2: Handle deleteCount greater than length - start
 //     deleteCount = Math.min(Math.max(deleteCount, 0), arr.length - start);
-  
+
 //     // Step 3: Remove deleted elements and store them in a new array
 //     const deleted = [];
 //     for (let i = 0; i < deleteCount; i++) {
 //       deleted.push(arr[start + i]);
 //     }
-  
+
 //     // Step 4: Shift remaining elements
 //     const shiftCount = arr.length - start - deleteCount;
 //     for (let i = 0; i < shiftCount; i++) {
 //       arr[start + i] = arr[start + deleteCount + i];
 //     }
-  
+
 //     // Step 5: Insert new items
 //     const itemsCount = items.length;
 //     const newLength = arr.length - deleteCount + itemsCount;
@@ -932,11 +1024,11 @@ console.log(new_word);*/
 //     for (let i = 0; i < itemsCount; i++) {
 //       arr[start + i] = items[i];
 //     }
-  
+
 //     // Step 6: Return the deleted elements
 //     return deleted;
 //   }
-  
+
 //   // Example usage:
 //   const originalArray = [1, 2, 3, 4, 5];
 //   const deletedElements = customSplice(originalArray, 2, 2, 7, 8, 9, 10);
@@ -944,19 +1036,145 @@ console.log(new_word);*/
 //   console.log(originalArray); // Output: [1, 2, 'a', 'b', 'c', 5]
 
 //Q6 convert two dimensional array into one dimension
-let array4 = [10, [11, 12], 13, 14, [15, 16]];
-let new_array3 = [];
+// let array4 = [10, [11, 12], 13, 14, [15, 16]];
+// let new_array3 = [];
 
-for (let i = 0; i < array4.length; i++) {
-  if (Array.isArray(array4[i])) {
-    for (let j = 0; j < array4[i].length; j++) {
-      new_array3.push(array4[i][j]);
-    }
-  } else {
-    new_array3.push(array4[i]);
-  }
-}
-console.log(new_array3);
+// for (let i = 0; i < array4.length; i++) {
+//   if (Array.isArray(array4[i])) {
+//     for (let j = 0; j < array4[i].length; j++) {
+//       new_array3.push(array4[i][j]);
+//     }
+//   } else {
+//     new_array3.push(array4[i]);
+//   }
+// }
+// console.log(new_array3);
+
+// function customInclude(array, value) {
+//     for (var i = 0; i < array.length; i++) {
+//         if (array[i] === value) {
+//             return true;
+//         }
+//     }
+//     return false;
+// }
+// var array = [10, 20, 30, 40, 50, 60];
+// console.log(customInclude(array, 30)); 
+// console.log(customInclude(array, 6)); 
+
+// let ayyary1 = [10, 20, 30, 40, 50, 60];
+// let value = 50;
+// for(i=0; i<ayyary1.length; i++){
+//     if(ayyary1[i]===value){
+//         print = true;
+//     }else{
+//         print = false;
+//     }
+// }
+// console.log(print);
+
+// write the function to concat two arrays without concat function
+// let arr1 = [10, 20, 5, 8, 15];
+// let arr2 = [100, 80, 23, 11, 2];
+
+// function mergeArray(arr1, arr2) {
+//   let arr3 = [];
+
+//   for (let i = 0; i < arr1.length; i++) {
+//     arr3.push(arr1[i]);
+//   }
+//   for (let j = 0; j < arr2.length; j++) {
+//     arr3.push(arr2[j]);
+//   }
+//   return arr3;
+// }
+
+// console.log(mergeArray(arr1, arr2));
+
+//write the custom function for arr.lastInexOf()
+// let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 2, 9, 10];
+// function lastIndexOf(arr, val) {
+//   for (let i = arr.length - 1; i >= 0; i--) {
+//     if (arr[i] === val) {
+//       return i;
+//     }
+//   }
+//   return -1;
+// }
+
+// console.log(lastIndexOf(arr1, 2));
+
+
+//write the custom func for arr.find()
+// let arr = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+// function myFind(arr, val) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === val) {
+//       return i;
+//     }
+//   }
+//   return -1;
+// }
+// console.log("Index of 50:", myFind(arr, 50));
+
+
+//write the custom func for arr.findIndex()
+// let arr = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+// function myFindIndex(arr, val) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === val) {
+//       return i;
+//     }
+//   }
+//   return -1;
+// }
+// console.log("findIndex of 50:", myFindIndex(arr, 50));
+
+
+//write the custom function for arr.lastInexOf()
+// let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 2, 9, 10];
+// function lastIndexOf(arr, val) {
+//   for (let i = arr.length - 1; i >= 0; i--) {
+//     if (arr[i] === val) {
+//       return i;
+//     }
+//   }
+//   return -1;
+// }
+// console.log(lastIndexOf(arr1, 2));
+
+
+//write the custom function for arr.includes()
+// let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// function myIncludes(arr, val) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === val) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+// console.log(myIncludes(arr1, 2));
+
+
+//write the custom function for arr.slice()
+// let arr = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+// function sliceArr(arr, startIndex = 0, endIndex = arr.length) {
+//   let newArr = [];
+//   for (let i = startIndex; i < endIndex; i++) {
+//     newArr.push(arr[i]);
+//   }
+//   return newArr;
+// }
+// console.log(sliceArr(arr, 0, 5));
+
+//   slice  ----
+
+// let arr = [10, 20, 30, 40, 50, 50, 60, 70];
+// console.log(arr.slice(4,9));
+// console.log(arr.slice(0,3));
+// console.log(arr.slice(0));
+// console.log(arr.slice(1));
 
 
 //-----------------------------APNA COLLEGE------------------------------------------------------------------
@@ -997,8 +1215,133 @@ console.log(new_array3);
 // console.log(val);
 
 
+// --------deepak sir---------------------------
+
+// class Class1 {
+//     classname = "Class";
+
+//     getClassname = () => {
+//         console.log(this.className);
+//     }
+// }
+
+// class Class2 extends Class1{
+
+// }                   
+
+// let class2 = new Class2();
+// console.log(class2);
 
 
+//slice in array
+//let arr = [10,20,30,40,50,60,70,80,90]; // length 9
+//console.log(arr.slice(0));
+//console.log(arr.slice(0,-1)); //(8) [10, 20, 30, 40, 50, 60, 70, 80]
+//console.log(arr.slice(3));  //(6) [40, 50, 60, 70, 80, 90]
+// console.log(arr.slice(-1,0)); //[]
+// console.log(arr.slice(0,0)); //[]
+// console.log(arr.slice(2,1)); //[]
+// console.log(arr.slice(-1,-1)); //[]
+//console.log(arr.slice(-1,-2)); //[]
+// console.log(arr.slice(-2,-1)); // [80]
+// console.log(arr.slice(7,8)); // [80]
+
+//cocat in array--
+// let arr = [10,20,30,40,50,60];
+// let arr1 = [`a`,`s`,`d`,`f`,`g`,`h`,`j`];
+
+// let ans = arr + arr1;
+// console.log(ans, typeof ans);
+
+// let answer = arr.concat(arr1);
+// console.log(answer, typeof answer); 
+
+
+//-----------------------------instagram-----------------------------------------------------------------
+
+// let object = {
+//     fullName : "harshit tiwari",
+//     course : "B.Tech",
+//     Branch : "CSE",
+//     roll_no : 2005988,
+//     mobile_no : 8896423393,
+//     email : "harshit@gmail.com",
+//     father : "Awadhesh Tiwari",
+//     mother : "Usha Tiwari"
+// }
+// let output = JSON.stringify(object);
+// console.log(output, typeof output);
+// console.table(object);
+
+
+// array of object
+// let list = [
+//     {Name:"Aman Sharma",Course:"B.Tech",Branch:"CSE",Roll_no:2005960,},
+//     {Name:"Harshit Tiwari",Course:"B.Tech",Branch:"CSE",Roll_no:2005988},
+//     {Name:"Naman Sinha",Course:"B.Tech",Branch:"CSE",Roll_no:2005890},
+//     {Name:"navaneet",Course:"Diploma",Branch:"Electrical",Roll_no:36789986},
+// ]
+// console.table(list);
+
+// let arr = [12, 13, 45, 36, 26, 36, 57];
+// console.table(arr);
+
+// arrow function---
+// function sayHello(){
+//     console.log("hello aman");
+// }
+// sayHello();
+
+// sayHello = () => {console.log("hello aman")};
+// sayHello();
+
+// let table = () => {
+//     for(i=1; i<=10; i++){
+//         console.log(5*i);
+//     }
+// }
+// table();
+
+
+// let table6 = (x) => {
+//     for(i=1; i<=10; i++){
+//         console.log(x*i);
+//     }
+// }
+// table6(6);
+
+// factoeial--
+// let number = 5;
+// let newNum = 1;
+// for(i=number; i>=1; i--){
+//     newNum = newNum*i;
+// }
+// console.log(newNum);
+
+// factorial = (num) => {
+//     let newval = 1;
+//     for(i=num; i>=1; i--){
+//         newval *= i;
+//     }
+//     console.log(newval);
+// }
+// factorial(20);
+
+function factorial(num) {
+    if (num < 0) {
+        result = NaN;
+    } else if (num === 0) {
+        result = 1;
+    } else {
+        let result = 1;
+        for (i = num; i >= 1; i--) {
+            result *= i;
+        }
+        console.log(result);
+    }
+
+}
+factorial(6);
 
 
 
