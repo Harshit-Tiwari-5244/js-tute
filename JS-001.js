@@ -5,21 +5,21 @@ console.log(a);
 var a = 3;
 console.log(a);*/
 
-/*let a = 2;
+/*const a = 2;
 console.log(a); // 2
 a = 3;
 console.log(a);  //over ride: print 3*/
 
-// let myname = "Harshit";
+// const myname = "Harshit";
 //  myname = "Aman";
 // console.log(myname);
 
-// let a = 4;
+// const a = 4;
 // b = 3;
 // sum = a+b;
 // console.log(sum);
 
-// let a = 2;
+// const a = 2;
 // b = ++a;
 // console.log(b);
 
@@ -1176,6 +1176,99 @@ console.log(new_word);*/
 // console.log(arr.slice(0));
 // console.log(arr.slice(1));
 
+// const a = 4;
+// const b = 4;
+// if(a===b){
+//     console.log("true");
+// }else{
+//     console.log(false);
+
+// let a = 10;
+// let b = -19;
+// if(a>b){
+//     console.log(a);
+// }else{
+//     console.log(b);
+// }
+
+//3, -7, 2
+// let a = 3;
+// let b = -7;
+// let c = 2;
+// let product = a*b*c;
+// if(product>0){
+//     console.log("positive");
+// }else{
+//     console.log("negative");
+// }
+
+
+// to print in decending order
+// let a = 0;
+// let b = -1;
+// let c = 4;
+// if(a>b && a>c){
+//     if(b>c){
+//         console.log(a + ", " + b + ", " + c);
+//     }else{
+//         console.log(a + ", " + c + ", " + b);
+//     }
+// }else if(b>a && b>c){
+//     if(a>c){
+//         console.log(b + ", " + a + ", " + c);
+//     }else{
+//         console.log(b + ", " + c + ", " + a);
+//     }
+    
+// }else if(c>a && c>b){
+//     if(a>b){
+//         console.log(c + ", " + a + ", " + b);
+//     }else{
+//         console.log(c + ", " + b + ", " + a);
+//     }
+// }else{
+//     console.log("done");
+// }
+
+
+// // find largest number in -5, -2, -6, 0, -1
+// let a = [-5, -2, -6, 0, -1];
+// if(a[0]>a[1] && a[0]>a[2] && a[0]>a[3] && a[0]>a[4]){
+//     console.log("largest value is: ", a[0]);
+// }else if(a[1]>a[0] && a[1]>a[2] && a[1]>a[3] && a[1]>a[4]){
+//     console.log("largest value is: ", a[1]);
+// }else if(a[2]>a[0] && a[2]>a[1] && a[2]>a[3] && a[2]>a[4]){
+//     console.log("largest value is: ", a[2]);
+// }else if(a[3]>a[0] && a[3]>a[1] && a[3]>a[2] && a[3]>a[4]){
+//     console.log("largest value is: ", a[3]);
+// }else if(a[4]>a[0] && a[4]>a[1] && a[4]>a[2] && a[4]>a[3]){
+//     console.log("largest value is: ", a[4]);
+// }else{
+//     console.log("largest value is: ", "null");
+// }
+
+//Write a JavaScript for loop that iterates from 0 to 15. For each iteration, it checks if the current number is odd or even, and       displays a message on the screen.
+// let n = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+// for(i=n[0]; i<=n[15]; i++){
+//     if(n[i]%2===0){
+//         console.log(n[i],"= even");
+//     }else{
+//         console.log(n[i],"= odd");
+//     }
+// }
+
+// method---- 
+for(i=0; i<=15; i++){
+    if(i%2===0){
+        console.log(i + " = " + "even");
+    }else{
+        console.log(i + " = " + "odd");
+    }
+}
+
+
+
+
 
 //-----------------------------APNA COLLEGE------------------------------------------------------------------
 
@@ -1217,6 +1310,11 @@ console.log(new_word);*/
 
 // --------deepak sir---------------------------
 
+
+
+
+
+
 // class Class1 {
 //     classname = "Class";
 
@@ -1229,12 +1327,12 @@ console.log(new_word);*/
 
 // }                   
 
-// let class2 = new Class2();
+// const class2 = new Class2();
 // console.log(class2);
 
 
 //slice in array
-//let arr = [10,20,30,40,50,60,70,80,90]; // length 9
+//const arr = [10,20,30,40,50,60,70,80,90]; // length 9
 //console.log(arr.slice(0));
 //console.log(arr.slice(0,-1)); //(8) [10, 20, 30, 40, 50, 60, 70, 80]
 //console.log(arr.slice(3));  //(6) [40, 50, 60, 70, 80, 90]
@@ -1247,19 +1345,19 @@ console.log(new_word);*/
 // console.log(arr.slice(7,8)); // [80]
 
 //cocat in array--
-// let arr = [10,20,30,40,50,60];
-// let arr1 = [`a`,`s`,`d`,`f`,`g`,`h`,`j`];
+// const arr = [10,20,30,40,50,60];
+// const arr1 = [`a`,`s`,`d`,`f`,`g`,`h`,`j`];
 
-// let ans = arr + arr1;
+// const ans = arr + arr1;
 // console.log(ans, typeof ans);
 
-// let answer = arr.concat(arr1);
+// const answer = arr.concat(arr1);
 // console.log(answer, typeof answer); 
 
 
 //-----------------------------instagram-----------------------------------------------------------------
 
-// let object = {
+// const object = {
 //     fullName : "harshit tiwari",
 //     course : "B.Tech",
 //     Branch : "CSE",
@@ -1269,13 +1367,13 @@ console.log(new_word);*/
 //     father : "Awadhesh Tiwari",
 //     mother : "Usha Tiwari"
 // }
-// let output = JSON.stringify(object);
+// const output = JSON.stringify(object);
 // console.log(output, typeof output);
 // console.table(object);
 
 
 // array of object
-// let list = [
+// const list = [
 //     {Name:"Aman Sharma",Course:"B.Tech",Branch:"CSE",Roll_no:2005960,},
 //     {Name:"Harshit Tiwari",Course:"B.Tech",Branch:"CSE",Roll_no:2005988},
 //     {Name:"Naman Sinha",Course:"B.Tech",Branch:"CSE",Roll_no:2005890},
@@ -1283,7 +1381,7 @@ console.log(new_word);*/
 // ]
 // console.table(list);
 
-// let arr = [12, 13, 45, 36, 26, 36, 57];
+// const arr = [12, 13, 45, 36, 26, 36, 57];
 // console.table(arr);
 
 // arrow function---
@@ -1295,7 +1393,7 @@ console.log(new_word);*/
 // sayHello = () => {console.log("hello aman")};
 // sayHello();
 
-// let table = () => {
+// const table = () => {
 //     for(i=1; i<=10; i++){
 //         console.log(5*i);
 //     }
@@ -1303,7 +1401,7 @@ console.log(new_word);*/
 // table();
 
 
-// let table6 = (x) => {
+// const table6 = (x) => {
 //     for(i=1; i<=10; i++){
 //         console.log(x*i);
 //     }
@@ -1311,15 +1409,15 @@ console.log(new_word);*/
 // table6(6);
 
 // factoeial--
-// let number = 5;
-// let newNum = 1;
+// const number = 5;
+// const newNum = 1;
 // for(i=number; i>=1; i--){
 //     newNum = newNum*i;
 // }
 // console.log(newNum);
 
 // factorial = (num) => {
-//     let newval = 1;
+//     const newval = 1;
 //     for(i=num; i>=1; i--){
 //         newval *= i;
 //     }
@@ -1327,21 +1425,24 @@ console.log(new_word);*/
 // }
 // factorial(20);
 
-function factorial(num) {
-    if (num < 0) {
-        result = NaN;
-    } else if (num === 0) {
-        result = 1;
-    } else {
-        let result = 1;
-        for (i = num; i >= 1; i--) {
-            result *= i;
-        }
-        console.log(result);
-    }
+// function factorial(num) {
+//     if (num < 0) {
+//         result = NaN;
+//     } else if (num === 0) {
+//         result = 1;
+//     } else {
+//         const result = 1;
+//         for (i = num; i >= 1; i--) {
+//             result *= i;
+//         }
+//         console.log(result);
+//     }
 
-}
-factorial(6);
+// }
+// factorial(6);
+
+
+
 
 
 
