@@ -1,5 +1,88 @@
 //VARIABLES IN JS:
 
+// let str = "";
+// for(i=0; i<=5; i++){
+//     str += "Harshit";
+// }
+// console.log(str);
+
+// setInterval(function() {
+//     let currentDateTime = new Date();
+
+//     let day = currentDateTime.getDate();
+//     let month = currentDateTime.getUTCMonth() + 1;
+//     let year = currentDateTime.getFullYear();
+//     let hour = currentDateTime.getHours();
+//     let minute = currentDateTime.getMinutes();
+//     let second = currentDateTime.getSeconds();
+    
+//     let clock =document.getElementById("clock");
+//     clock.innerHTML = `${hour}:${minute}:${second} ${day}/${month}/${year}`;
+// },1000)
+
+// const today = new Date();
+// //console.log(today);
+// let dayName = today.toLocaleString("default",{weekday:"long"});
+// console.log(dayName);
+
+
+// short hand of to print repeat---
+// let str = "hellow".repeat(5);
+// console.log(str,typeof str);
+
+// console.log("H".repeat(100));
+
+
+// let arr1 = [10,20,30,40,50,60,70,80,90];
+// let arr2 = ['a','b','c','d'];
+// let arr3 = [1,2,3,4,5,56,7,8,9];
+// let newArr = arr1.concat(arr2);
+// console.log(newArr, typeof newArr);
+
+// {let x = "Harshit";
+// let y = "Tiwari";
+// console.log(x,y); //x=Harshit y=Tiwari
+
+// const temp = x;
+// x = y;
+// y = temp;
+// console.log(x,y);}  // x=Tiwari y=Harshit
+
+// //short hand of abov ex--
+// let x = "Harshit";
+// let y = "Tiwari";
+// [x,y] = [y,x]
+// console.log([x,y], typeof [x,y]);
+
+// function sum(){
+//     a =10 ;
+//     b=90;
+
+//     return a + b
+// }
+
+// const value = sum();
+// console.log(value);
+
+// function factorial(n){
+//     if(n===0 || n===1){
+//         return 1;
+//     }
+//     return n * factorial(n-1);
+// }
+// let factoeial = factorial(5);
+// console.log(factoeial);
+
+
+// let a = 10;
+// console.log(a);
+
+
+
+
+
+
+
 /*var a = 2;
 console.log(a);
 var a = 3;
@@ -1219,7 +1302,7 @@ console.log(new_word);*/
 //     }else{
 //         console.log(b + ", " + c + ", " + a);
 //     }
-    
+
 // }else if(c>a && c>b){
 //     if(a>b){
 //         console.log(c + ", " + a + ", " + b);
@@ -1258,19 +1341,105 @@ console.log(new_word);*/
 // }
 
 // method---- 
-for(i=0; i<=15; i++){
-    if(i%2===0){
-        console.log(i + " = " + "even");
-    }else{
-        console.log(i + " = " + "odd");
-    }
-}
+// for(i=0; i<=15; i++){
+//     if(i%2===0){
+//         console.log(i + " = " + "even");
+//     }else{
+//         console.log(i + " = " + "odd");
+//     }
+// }
+
+//Write a JavaScript program that computes the average marks of the students.Then, this average is used to determine the corresponding grade.
+// Array of students with their names and grades
+
+// var students = [['David', 80], ['Vinoth', 77], ['Divya', 88], ['Ishitha', 95], ['Thomas', 68]];
+// var Avgmarks = 0;
+// for (var i = 0; i < students.length; i++) {
+//     Avgmarks += students[i][1];
+//     var avg = (Avgmarks / students.length);
+// }
+// console.log("Average grade: " + (Avgmarks) / students.length);
+// if (avg < 60) {
+//     console.log("Grade: F");
+// } else if (avg < 70) {
+//     console.log("Grade: D");
+// } else if (avg < 80) {
+//     console.log("Grade: C");
+// } else if (avg < 90) {
+//     console.log("Grade: B");
+// } else if (avg <= 100) {
+//     console.log("Grade: A");
+//}
+// console.log(students.length);
+// console.log(students[0][1]);
+
+//  for(i=1; i<=100; i++){
+//     if(i%3===0 && i%5===0){
+//         console.log(i,"by 3&5: FizzBuzz");
+//     }else if(i%3===0){
+//         console.log(i,"by 3: fizz");
+//     }else if(i%5===0){
+//         console.log(i,"by 5: buzz");
+//     }else{
+//         console.log(i);
+//     }
+// }
+
+
+// Loop through numbers from 1 to 100
+// for (var i = 1; i <= 100; i++) {
+//     // Check if the number is divisible by both 3 and 5
+//     if (i % 3 === 0 && i % 5 === 0) {
+//         console.log(i + " FizzBuzz");
+//     }
+//     // Check if the number is divisible by 3
+//     else if (i % 3 === 0) {
+//         console.log(i + " Fizz");
+//     }
+//     // Check if the number is divisible by 5
+//     else if (i % 5 === 0) {
+//         console.log(i + " Buzz");
+//     }
+//     // If none of the above conditions are met, print the number
+//     else {
+//         console.log(i);
+//     }
+// } 
 
 
 
 
 
 //-----------------------------APNA COLLEGE------------------------------------------------------------------
+
+//   ---------------------dom manipulation---------------------------
+
+
+// for(let i=0; i<3; i++){
+//     setTimeout(() => console.log(i),1)
+// }
+
+
+
+
+//  function printNumbers(start){
+//     if(start<=10){
+//         console.log(start++);
+//     }
+//     printNumbers(start);
+// }
+// printNumbers(1);
+
+
+// function apple(){
+//     banana();
+// }
+// apple();
+
+// function banana(){
+//     apple();
+// }
+// banana();
 
 // function myfunction(){
 //     console.log("welcome to the world");
@@ -1310,7 +1479,17 @@ for(i=0; i<=15; i++){
 
 // --------deepak sir---------------------------
 
+// let promise = new Promise((resolve, reject) => {
+//     resolve("Resolved State")
+//     reject("Rejected State")
+// })
+// console.log(promise);
 
+//  function func1(){
+//     func2()
+//     console.log("func1 called");
+
+// }
 
 
 
@@ -1325,7 +1504,7 @@ for(i=0; i<=15; i++){
 
 // class Class2 extends Class1{
 
-// }                   
+// }
 
 // const class2 = new Class2();
 // console.log(class2);
@@ -1352,10 +1531,27 @@ for(i=0; i<=15; i++){
 // console.log(ans, typeof ans);
 
 // const answer = arr.concat(arr1);
-// console.log(answer, typeof answer); 
+// console.log(answer, typeof answer);
 
 
 //-----------------------------instagram-----------------------------------------------------------------
+
+// function greet(){
+//     console.log(this);
+// }
+// greet();// output windows
+
+// let person = {
+//     firstName : "Harshit",
+//     lastName : "Tiwari",
+//     greet : function(){
+//         console.log(this.firstName);
+//     }
+// }
+// greet();
+
+
+
 
 // const object = {
 //     fullName : "harshit tiwari",
@@ -1408,6 +1604,14 @@ for(i=0; i<=15; i++){
 // }
 // table6(6);
 
+// const table5 = (x) => {
+//     for(i=1; i<=10; i++){
+//         console.log(x*i);
+//     }
+// }
+// table5(5);
+
+
 // factoeial--
 // const number = 5;
 // const newNum = 1;
@@ -1440,6 +1644,54 @@ for(i=0; i<=15; i++){
 
 // }
 // factorial(6);
+
+// console.log(null==0);
+
+// var a = 1;
+// function b(){
+//     a = 10;
+//     return;
+//     function a(){}
+// }
+// b();
+//console.log(a);
+
+//------------------------15-aug-24----------------
+
+// let arr = new Array(1,2,3);
+// console.log(arr, typeof arr);
+
+// traverse an arraay of elements
+// let arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+// for (let i = 0; i < arr.length; i++) {
+//     let element = arr[i];
+//     console.log(element);
+    
+// }
+
+
+
+
+// traverse an arraay of elements in reverse order
+// let arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[arr.length - 1 - i] >= 0) {
+//         let newarr = arr[arr.length - 1 - i];
+//         console.log(newarr);
+//     }
+    
+// }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
